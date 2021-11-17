@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="icon shortcut" href="/icons/favicon.ico">
+	<link rel="stylesheet" href="src.css">
+	<title>Recipe Search</title>
+	<meta name="description" content="Recipe Search with Typesense">
+	<meta name="keywords" content="recipe, search, recipe search, search engine, typesense">
+</head>
+
+<body>
+	<div id="searchbox" class="d-none"></div>
+	<div id="results-section" class="container d-none">
+		<div class="mt-3 row">
+			<div class="col-md-3"> </div>
+			<div class="col-md">
+				<div class="d-flex justify-content-end row">
+					<div id="stats" class="align-items-center col-md d-flex justify-content-end justify-content-md-start order-first order-md-last small text-right"></div>
+				</div>
+			</div>
+		</div>
+		<div class="mt-3 row">
+			<div class="col-md-3">
+				<nav class="navbar navbar-expand-md navbar-light p-0 pb-3"> <button class="border-light-2 navbar-toggler text-primary" type="button" data-toggle="collapse"
+						data-target="#filters-section" aria-controls="filters-section" aria-expanded="false" aria-label="Toggle filters"> <span class="navbar-toggler-icon"></span><span class="ml-2"
+							style="font-size:15px;">Refine</span> </button>
+					<div class="collapse d-md-block mt-3 mt-md-0 navbar-collapse" id="filters-section">
+						<div class="mb-2 row">
+							<div class="col-md">
+								<div id="current-refinements"></div>
+							</div>
+						</div>
+						<div class="mt-2 row">
+							<div class="col-md">
+								<h4 class="font-weight-light text-primary">Filter by Ingredients</h4>
+								<div id="ingredients-refinement-list"></div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="col-md">
+				<div id="hits"></div>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
